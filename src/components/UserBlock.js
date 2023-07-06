@@ -4,8 +4,9 @@ import { Styles } from "../styles/Styles";
 import { AppColors } from "../styles/AppColors";
 import { Shadow } from 'react-native-shadow-2';
 import { BlueCommentIcon, BlueHeart14, BrokenHeart14 } from "../assets/svgs/HomeSvgs";
+import { MoreIcon } from "../assets/svgs/AuthSvgs";
 
-export default function UserBlock({ authorityMode, activityStatus, chatIcon, selected, rating, moveEnd }) {
+export default function UserBlock({ authorityMode, activityStatus, chatIcon, selected, rating, moveEnd, moreIcon }) {
     return <Shadow distance={3} containerStyle={{ marginBottom: 10, marginHorizontal: 5, marginTop: 3 }} style={{ width: '100%' }}>
         <TouchableOpacity style={[styles.container, Styles.flexRowJustifyBetween, selected && { borderWidth: 2, borderColor: AppColors.GOLD_COLOR, backgroundColor: AppColors.LEMON_COLOR }]}>
             <View style={[Styles.flexRowJustifyBetween, { width: '100%', alignItems: 'flex-start' }]}>
@@ -32,6 +33,7 @@ export default function UserBlock({ authorityMode, activityStatus, chatIcon, sel
                 </View> : activityStatus ?
                     <View style={[styles.activityBlock, moveEnd && { justifyContent: 'flex-end' }]}>
                         {chatIcon && <BlueCommentIcon />}
+                        {moreIcon && <MoreIcon />}
                         <Text style={Styles.darkBlueSemiBold10}>Cегодня в 13:44</Text>
                     </View> : rating ?
                         <Text style={Styles.darkBlueSemiBold10}>

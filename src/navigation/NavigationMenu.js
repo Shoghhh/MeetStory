@@ -10,6 +10,7 @@ import { HomeNavigator } from './HomeNavigator';
 import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
 import NotificationsScreen from '../screens/notifications/NotificationsScreen';
 import Header from './Header';
+import { SearchNavigator } from './SearchNavigator';
 
 const Tab = createBottomTabNavigator();
 const PayScreenComponent = () => {
@@ -38,7 +39,7 @@ export default function NavigationMenu() {
     >
       <Tab.Screen
         name="Search"
-        component={PayScreenComponent}
+        component={SearchNavigator}
         options={({ route }) => ({
           headerShown: false,
           tabBarIcon: ({ focused }) => <SearchIcon focused={focused} />
@@ -55,9 +56,6 @@ export default function NavigationMenu() {
       <Tab.Screen
         name="Notifications"
         component={NotificationsScreen}
-        // options={{
-        // }}
-
         options={({ navigation }) => ({
           title: '',
           headerTransparent: true,
