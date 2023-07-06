@@ -10,6 +10,7 @@ import { HomeNavigator } from './HomeNavigator';
 import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
 import NotificationsScreen from '../screens/notifications/NotificationsScreen';
 import Header from './Header';
+import { BalanceNavigator } from './BalanceNavigator';
 
 const Tab = createBottomTabNavigator();
 const PayScreenComponent = () => {
@@ -68,9 +69,10 @@ export default function NavigationMenu() {
         })}
       />
       <Tab.Screen
-        name="Profile"
-        component={PayScreenComponent}
+        name="BalanceNavigator"
+        component={BalanceNavigator}
         options={{
+          title: '',
           headerShown: false,
           tabBarIcon: ({ focused }) => <ProfileIcon focused={focused} />
         }}

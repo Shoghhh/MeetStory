@@ -135,6 +135,11 @@ export const Styles = StyleSheet.create({
     fontSize: 20,
     fontFamily: 'Raleway-SemiBold'
   },
+  DarkSemiBold20:{
+    color: AppColors.DARK_CHARCOAL_COLOR,
+    fontSize: 20,
+    fontFamily: 'Raleway-SemiBold'
+  },
   blockContainer: {
     borderBottomWidth: 1,
     padding: 20,
@@ -154,6 +159,10 @@ export const Styles = StyleSheet.create({
     color: AppColors.WHITE_COLOR,
     fontSize: 10,
     fontFamily: 'Raleway-SemiBold'
+  },
+  balanceText:{
+    color:AppColors.WHITE_COLOR,
+    fontSize:30,
   }
 
 });

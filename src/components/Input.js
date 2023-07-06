@@ -8,7 +8,7 @@ import DatePicker from "react-native-date-picker";
 import moment from "moment";
 
 
-export default function Input({ labelText, inputType, value, setValue, minLengthPass, error, data }) {
+export default function Input({ labelText, inputType, value, setValue, minLengthPass, error, data,placeholder }) {
 
     const [open, setOpen] = useState(false)
     const [openDatePicker, setOpenDatePicker] = useState(false)
@@ -71,6 +71,7 @@ export default function Input({ labelText, inputType, value, setValue, minLength
                         maxLength={inputType == 'code' ? 6 : 50}
                         secureTextEntry={inputType === 'pass' && !isOpenEye ? true : false}
                         keyboardType={inputType == 'phone' || inputType == 'code' ? 'phone-pad' : 'ascii-capable'}
+                        placeholder ={placeholder}
                     />
                     {inputType === 'pass' && (isOpenEye ?
                         <TouchableOpacity onPress={() => setIsOpenEye(false)} style={styles.eyeContainer}>
