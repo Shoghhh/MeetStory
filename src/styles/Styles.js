@@ -29,6 +29,11 @@ export const Styles = StyleSheet.create({
     fontFamily: 'Raleway-SemiBold',
     color: AppColors.BLACK_COLOR,
   },
+  bitterSweetSemiBold28: {
+    fontSize: 28,
+    fontFamily: 'Raleway-SemiBold',
+    color: AppColors.BITTERSWEET_COLOR,
+  },
   darkMedium14: {
     fontSize: 14,
     fontFamily: 'Raleway-Medium',
@@ -115,6 +120,11 @@ export const Styles = StyleSheet.create({
     fontSize: 10,
     fontFamily: 'Raleway-SemiBold'
   },
+  darkBlueSemiBold20: {
+    color: AppColors.LOCHMARA_COLOR,
+    fontSize: 20,
+    fontFamily: 'Raleway-SemiBold'
+  },
   blueMedium16: {
     color: AppColors.STEEL_BLUE_COLOR,
     fontSize: 16,
@@ -134,6 +144,11 @@ export const Styles = StyleSheet.create({
     color: AppColors.WHITE_COLOR,
     fontSize: 20,
     fontFamily: 'Raleway-SemiBold'
+  },
+  whiteMedium20:{
+    color: AppColors.WHITE_COLOR,
+    fontSize: 20,
+    // fontWeight:500,
   },
   DarkSemiBold20:{
     color: AppColors.DARK_CHARCOAL_COLOR,
@@ -163,6 +178,10 @@ export const Styles = StyleSheet.create({
   balanceText:{
     color:AppColors.WHITE_COLOR,
     fontSize:30,
+  },
+  bittersweetSemiBold12:{
+    color:AppColors.BITTERSWEET_COLOR,
+    fontSize:12
   }
-
+  
 });

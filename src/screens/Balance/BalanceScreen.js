@@ -13,6 +13,7 @@ export default function BalanceScreen({navigation}) {
         backImagePath={require('../../assets/pngs/BlockBack18.png')}
       />
       <HorizontalBlock
+        onPress={() => navigation.navigate('BalanceHistory')}
         text={'История транзакций'}
         Icon={HistorySvg}
         backImagePath={require('../../assets/pngs/BlockBack18.png')}
