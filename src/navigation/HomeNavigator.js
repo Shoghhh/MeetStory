@@ -14,6 +14,10 @@ import CommentsScreen from '../screens/feed/CommentsScreen';
 import ForumScreen from '../screens/forum/ForumScreen';
 import PopularTopics from '../screens/forum/PopularTopics';
 import ForumSingle from '../screens/forum/ForumSingle';
+import BuyingAuthority from '../screens/Balance/BuyingAuthority';
+import { RaisingProfile } from '../screens/Balance/RaisingProfile';
+import { GiftYourself } from '../screens/Balance/GiftYourself';
+import { BalanceCongrats } from '../screens/Balance/BalanceCongrats';
 
 const Stack = createNativeStackNavigator();
 
@@ -159,6 +163,34 @@ export const HomeNavigator = () => {
                         <Header navigation={navigation} title={' '} blackBackIcon />
                     ),
                 })}
+            />
+            <Stack.Screen
+                name="BuyingAuthority"
+                component={BuyingAuthority}
+                options={{
+                    headerShown: false
+                }}
+            />
+            <Stack.Screen
+                name="RaisingProfile"
+                component={RaisingProfile}
+                options={{
+                    headerShown: false
+                }}
+            />
+            <Stack.Screen
+                name="GiftYourself"
+                component={GiftYourself}
+                options={{
+                    headerShown: false
+                }}
+            />
+            <Stack.Screen
+                name="BalanceCongrats"
+                component={BalanceCongrats}
+                options={{
+                    headerShown: false
+                }}
             />
         </Stack.Navigator>
     );

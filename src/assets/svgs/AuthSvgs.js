@@ -101,6 +101,30 @@ export const PlusIcon = () => {
     />
   </Svg>
 }
+export const PlusIconWhite = () => {
+  return <Svg
+    width={32}
+    height={32}
+    viewBox="0 0 32 32"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <Rect x={1} y={1} width={30} height={30} rx={15} fill="#FFFFFF" />
+    <Path
+      d="M22 17h-5v5a1 1 0 01-2 0v-5h-5a1 1 0 010-2h5v-5a1 1 0 012 0v5h5a1 1 0 010 2z"
+      fill="#32709F"
+    />
+    <Rect
+      x={1}
+      y={1}
+      width={30}
+      height={30}
+      rx={15}
+      stroke="#ABCEF0"
+      strokeWidth={2}
+    />
+  </Svg>
+}
 
 export const OpenedEye = () => {
   return <Svg
